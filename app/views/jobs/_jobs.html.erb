@@ -1,0 +1,8 @@
+<h3>Jobs Completed</h3>
+<% @car.jobs.each do |job| %>
+	<div class="well">
+		<p><strong><%= job.title %></strong><br>
+			<%= job.date %>, <%= job.date %>
+		</p>
+	</div>
+<% end %>

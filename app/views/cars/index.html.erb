@@ -1,0 +1,8 @@
+<h1>Vehicles in Garage</h1>
+<%= link_to "Add Vehicle", new_car_path, :class => 'btn btn-primary' %>
+<% @car.each do |car| %>
+	<div class="well">
+		<h3><%= car.year %> <%= car.make %> <%= car.model %></h3>
+		<%= link_to "View Service History", car_path(car), :class => 'btn btn-primary' %>
+	</div>
+<% end %>

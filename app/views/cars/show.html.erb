@@ -1,0 +1,10 @@
+<h2><%= @car.year %> <%= @car.make %> <%= @car.model %></h2>
+<hr>
+<%= link_to "Edit", edit_car_path(@car), :class => 'btn btn-default' %>
+
+<%= link_to "Delete", car_path(@car), method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-danger' %>
+
+<hr>
+
+<%= render 'jobs/jobs' %>
+<%= render 'jobs/form' %>
