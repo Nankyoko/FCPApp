@@ -1,7 +1,7 @@
 <h3>Jobs Completed</h3>
 <% @car.jobs.each do |job| %>
 	<div class="well">
-		<p><strong><%= job.title %></strong><br>
+		<p><strong><%= job.title %></strong> <%= link_to '[X]', [job.car, job], method: :delete, data: {confirm: 'Are you sure?' } %><br>
 			<%= job.date %>, <%= job.cost %><br>
 			<%= job.text %>
 		</p>

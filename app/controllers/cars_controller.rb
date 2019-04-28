@@ -37,7 +37,9 @@ class CarsController < ApplicationController
 
 	def destroy
 		@car = Car.find(params[:id])
-		@car.jobs.each.delete
+		@car.jobs.each do |job|
+			job.destroy
+		end
 		@car.destroy
 		redirect_to cars_path
 	end
