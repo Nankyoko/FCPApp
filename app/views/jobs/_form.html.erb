@@ -1,12 +1,12 @@
 <h3>Add Job</h3>
-	<%= form_for([@car, @car.jobs.build]) do |f| %>
+<%= form_for([@car, @car.jobs.build]) do |f| %>
 	<p>
 		<%= f.label :title %><br>
 		<%= f.text_field(:title, {:class => 'form-control'}) %>
 		<%= f.label :date %><br>
-		<%= f.text_field(:title, {:class => 'form-control'}) %>
+		<%= f.text_field(:date, {:class => 'form-control'}) %>
 		<%= f.label :cost %><br>
-		<%= f.text_field(:title, {:class => 'form-control'}) %>
+		<%= f.text_field(:cost, {:class => 'form-control'}) %>
 	</p>
 	<p>
 		<%= f.label :text %><br>

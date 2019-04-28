@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
 	def create
 		@car = Car.find(params[:car_id])
-		@job = @car.job.create(job_params)
+		@job = @car.jobs.create(job_params)
 		redirect_to car_path(@car)
 	end
 

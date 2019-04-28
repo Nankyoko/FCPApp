@@ -2,7 +2,8 @@
 <% @car.jobs.each do |job| %>
 	<div class="well">
 		<p><strong><%= job.title %></strong><br>
-			<%= job.date %>, <%= job.date %>
+			<%= job.date %>, <%= job.cost %><br>
+			<%= job.text %>
 		</p>
 	</div>
 <% end %>
